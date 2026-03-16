@@ -123,7 +123,8 @@ function App() {
                   </span>
                   <div className="w-[15%] flex justify-end">
                     <span
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.stopPropagation();
                         handleDelete(index);
                       }}
                       className="w-7 h-7 bg-cyan-200 text-red-700 text-xl flex justify-center items-center rounded">
